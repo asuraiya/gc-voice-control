@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AD4C60AF1982848A002CA00A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60AE1982848A002CA00A /* Foundation.framework */; };
+		AD4C60B11982848A002CA00A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60B01982848A002CA00A /* CoreGraphics.framework */; };
+		AD4C60B31982848A002CA00A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60B21982848A002CA00A /* UIKit.framework */; };
+		AD4C60B91982848A002CA00A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4C60B71982848A002CA00A /* InfoPlist.strings */; };
+		AD4C60BB1982848A002CA00A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C60BA1982848A002CA00A /* main.m */; };
+		AD4C60BF1982848A002CA00A /* VoiceControlAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C60BE1982848A002CA00A /* VoiceControlAppDelegate.m */; };
+		AD4C60C21982848A002CA00A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD4C60C01982848A002CA00A /* Main.storyboard */; };
+		AD4C60C51982848A002CA00A /* VoiceControlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C60C41982848A002CA00A /* VoiceControlViewController.m */; };
+		AD4C60C71982848A002CA00A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD4C60C61982848A002CA00A /* Images.xcassets */; };
+		AD4C60CE1982848A002CA00A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60CD1982848A002CA00A /* XCTest.framework */; };
+		AD4C60CF1982848A002CA00A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60AE1982848A002CA00A /* Foundation.framework */; };
+		AD4C60D01982848A002CA00A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60B21982848A002CA00A /* UIKit.framework */; };
+		AD4C60D81982848A002CA00A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AD4C60D61982848A002CA00A /* InfoPlist.strings */; };
+		AD4C60DA1982848A002CA00A /* VoiceControlTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C60D91982848A002CA00A /* VoiceControlTestTests.m */; };
+		AD4C60E5198284FB002CA00A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60E3198284FB002CA00A /* AudioToolbox.framework */; };
+		AD4C60E6198284FB002CA00A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60E4198284FB002CA00A /* AVFoundation.framework */; };
+		AD4C60EC19828548002CA00A /* AcousticModelEnglish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD4C60E819828548002CA00A /* AcousticModelEnglish.bundle */; };
+		AD4C60ED19828548002CA00A /* AcousticModelSpanish.bundle in Resources */ = {isa = PBXBuildFile; fileRef = AD4C60E919828548002CA00A /* AcousticModelSpanish.bundle */; };
+		AD4C60EE19828548002CA00A /* OpenEars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60EA19828548002CA00A /* OpenEars.framework */; };
+		AD4C60EF19828548002CA00A /* Slt.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AD4C60EB19828548002CA00A /* Slt.framework */; };
+		AD4C60F2198296E3002CA00A /* OpenEarsModule.m in Sources */ = {isa = PBXBuildFile; fileRef = AD4C60F1198296E3002CA00A /* OpenEarsModule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AD4C60D11982848A002CA00A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD4C60A31982848A002CA00A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD4C60AA1982848A002CA00A;
+			remoteInfo = VoiceControlTest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AD4C60AB1982848A002CA00A /* VoiceControlTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VoiceControlTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4C60AE1982848A002CA00A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AD4C60B01982848A002CA00A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		AD4C60B21982848A002CA00A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		AD4C60B61982848A002CA00A /* VoiceControlTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoiceControlTest-Info.plist"; sourceTree = "<group>"; };
+		AD4C60B81982848A002CA00A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD4C60BA1982848A002CA00A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD4C60BC1982848A002CA00A /* VoiceControlTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VoiceControlTest-Prefix.pch"; sourceTree = "<group>"; };
+		AD4C60BD1982848A002CA00A /* VoiceControlAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceControlAppDelegate.h; sourceTree = "<group>"; };
+		AD4C60BE1982848A002CA00A /* VoiceControlAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceControlAppDelegate.m; sourceTree = "<group>"; };
+		AD4C60C11982848A002CA00A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AD4C60C31982848A002CA00A /* VoiceControlViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceControlViewController.h; sourceTree = "<group>"; };
+		AD4C60C41982848A002CA00A /* VoiceControlViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceControlViewController.m; sourceTree = "<group>"; };
+		AD4C60C61982848A002CA00A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD4C60CC1982848A002CA00A /* VoiceControlTestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VoiceControlTestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD4C60CD1982848A002CA00A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		AD4C60D51982848A002CA00A /* VoiceControlTestTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VoiceControlTestTests-Info.plist"; sourceTree = "<group>"; };
+		AD4C60D71982848A002CA00A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AD4C60D91982848A002CA00A /* VoiceControlTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceControlTestTests.m; sourceTree = "<group>"; };
+		AD4C60E3198284FB002CA00A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AD4C60E4198284FB002CA00A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		AD4C60E819828548002CA00A /* AcousticModelEnglish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelEnglish.bundle; sourceTree = "<group>"; };
+		AD4C60E919828548002CA00A /* AcousticModelSpanish.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = AcousticModelSpanish.bundle; sourceTree = "<group>"; };
+		AD4C60EA19828548002CA00A /* OpenEars.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = OpenEars.framework; sourceTree = "<group>"; };
+		AD4C60EB19828548002CA00A /* Slt.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Slt.framework; sourceTree = "<group>"; };
+		AD4C60F0198296E3002CA00A /* OpenEarsModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenEarsModule.h; sourceTree = "<group>"; };
+		AD4C60F1198296E3002CA00A /* OpenEarsModule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenEarsModule.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AD4C60A81982848A002CA00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4C60E5198284FB002CA00A /* AudioToolbox.framework in Frameworks */,
+				AD4C60EF19828548002CA00A /* Slt.framework in Frameworks */,
+				AD4C60E6198284FB002CA00A /* AVFoundation.framework in Frameworks */,
+				AD4C60B11982848A002CA00A /* CoreGraphics.framework in Frameworks */,
+				AD4C60B31982848A002CA00A /* UIKit.framework in Frameworks */,
+				AD4C60AF1982848A002CA00A /* Foundation.framework in Frameworks */,
+				AD4C60EE19828548002CA00A /* OpenEars.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4C60C91982848A002CA00A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4C60CE1982848A002CA00A /* XCTest.framework in Frameworks */,
+				AD4C60D01982848A002CA00A /* UIKit.framework in Frameworks */,
+				AD4C60CF1982848A002CA00A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AD4C60A21982848A002CA00A = {
+			isa = PBXGroup;
+			children = (
+				AD4C60E719828548002CA00A /* Framework */,
+				AD4C60B41982848A002CA00A /* VoiceControlTest */,
+				AD4C60D31982848A002CA00A /* VoiceControlTestTests */,
+				AD4C60AD1982848A002CA00A /* Frameworks */,
+				AD4C60AC1982848A002CA00A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AD4C60AC1982848A002CA00A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60AB1982848A002CA00A /* VoiceControlTest.app */,
+				AD4C60CC1982848A002CA00A /* VoiceControlTestTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AD4C60AD1982848A002CA00A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60E3198284FB002CA00A /* AudioToolbox.framework */,
+				AD4C60E4198284FB002CA00A /* AVFoundation.framework */,
+				AD4C60AE1982848A002CA00A /* Foundation.framework */,
+				AD4C60B01982848A002CA00A /* CoreGraphics.framework */,
+				AD4C60B21982848A002CA00A /* UIKit.framework */,
+				AD4C60CD1982848A002CA00A /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AD4C60B41982848A002CA00A /* VoiceControlTest */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60BD1982848A002CA00A /* VoiceControlAppDelegate.h */,
+				AD4C60BE1982848A002CA00A /* VoiceControlAppDelegate.m */,
+				AD4C60C01982848A002CA00A /* Main.storyboard */,
+				AD4C60C31982848A002CA00A /* VoiceControlViewController.h */,
+				AD4C60C41982848A002CA00A /* VoiceControlViewController.m */,
+				AD4C60C61982848A002CA00A /* Images.xcassets */,
+				AD4C60B51982848A002CA00A /* Supporting Files */,
+				AD4C60F0198296E3002CA00A /* OpenEarsModule.h */,
+				AD4C60F1198296E3002CA00A /* OpenEarsModule.m */,
+			);
+			path = VoiceControlTest;
+			sourceTree = "<group>";
+		};
+		AD4C60B51982848A002CA00A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60B61982848A002CA00A /* VoiceControlTest-Info.plist */,
+				AD4C60B71982848A002CA00A /* InfoPlist.strings */,
+				AD4C60BA1982848A002CA00A /* main.m */,
+				AD4C60BC1982848A002CA00A /* VoiceControlTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD4C60D31982848A002CA00A /* VoiceControlTestTests */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60D91982848A002CA00A /* VoiceControlTestTests.m */,
+				AD4C60D41982848A002CA00A /* Supporting Files */,
+			);
+			path = VoiceControlTestTests;
+			sourceTree = "<group>";
+		};
+		AD4C60D41982848A002CA00A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60D51982848A002CA00A /* VoiceControlTestTests-Info.plist */,
+				AD4C60D61982848A002CA00A /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD4C60E719828548002CA00A /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				AD4C60E819828548002CA00A /* AcousticModelEnglish.bundle */,
+				AD4C60E919828548002CA00A /* AcousticModelSpanish.bundle */,
+				AD4C60EA19828548002CA00A /* OpenEars.framework */,
+				AD4C60EB19828548002CA00A /* Slt.framework */,
+			);
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AD4C60AA1982848A002CA00A /* VoiceControlTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4C60DD1982848A002CA00A /* Build configuration list for PBXNativeTarget "VoiceControlTest" */;
+			buildPhases = (
+				AD4C60A71982848A002CA00A /* Sources */,
+				AD4C60A81982848A002CA00A /* Frameworks */,
+				AD4C60A91982848A002CA00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VoiceControlTest;
+			productName = VoiceControlTest;
+			productReference = AD4C60AB1982848A002CA00A /* VoiceControlTest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AD4C60CB1982848A002CA00A /* VoiceControlTestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD4C60E01982848A002CA00A /* Build configuration list for PBXNativeTarget "VoiceControlTestTests" */;
+			buildPhases = (
+				AD4C60C81982848A002CA00A /* Sources */,
+				AD4C60C91982848A002CA00A /* Frameworks */,
+				AD4C60CA1982848A002CA00A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD4C60D21982848A002CA00A /* PBXTargetDependency */,
+			);
+			name = VoiceControlTestTests;
+			productName = VoiceControlTestTests;
+			productReference = AD4C60CC1982848A002CA00A /* VoiceControlTestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AD4C60A31982848A002CA00A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = VoiceControl;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = Abe;
+				TargetAttributes = {
+					AD4C60CB1982848A002CA00A = {
+						TestTargetID = AD4C60AA1982848A002CA00A;
+					};
+				};
+			};
+			buildConfigurationList = AD4C60A61982848A002CA00A /* Build configuration list for PBXProject "VoiceControlTest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AD4C60A21982848A002CA00A;
+			productRefGroup = AD4C60AC1982848A002CA00A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AD4C60AA1982848A002CA00A /* VoiceControlTest */,
+				AD4C60CB1982848A002CA00A /* VoiceControlTestTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AD4C60A91982848A002CA00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4C60C71982848A002CA00A /* Images.xcassets in Resources */,
+				AD4C60ED19828548002CA00A /* AcousticModelSpanish.bundle in Resources */,
+				AD4C60EC19828548002CA00A /* AcousticModelEnglish.bundle in Resources */,
+				AD4C60B91982848A002CA00A /* InfoPlist.strings in Resources */,
+				AD4C60C21982848A002CA00A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4C60CA1982848A002CA00A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4C60D81982848A002CA00A /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AD4C60A71982848A002CA00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4C60BB1982848A002CA00A /* main.m in Sources */,
+				AD4C60BF1982848A002CA00A /* VoiceControlAppDelegate.m in Sources */,
+				AD4C60F2198296E3002CA00A /* OpenEarsModule.m in Sources */,
+				AD4C60C51982848A002CA00A /* VoiceControlViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD4C60C81982848A002CA00A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD4C60DA1982848A002CA00A /* VoiceControlTestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AD4C60D21982848A002CA00A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD4C60AA1982848A002CA00A /* VoiceControlTest */;
+			targetProxy = AD4C60D11982848A002CA00A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AD4C60B71982848A002CA00A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4C60B81982848A002CA00A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AD4C60C01982848A002CA00A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4C60C11982848A002CA00A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AD4C60D61982848A002CA00A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD4C60D71982848A002CA00A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AD4C60DB1982848A002CA00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		AD4C60DC1982848A002CA00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AD4C60DE1982848A002CA00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoiceControlTest/VoiceControlTest-Prefix.pch";
+				INFOPLIST_FILE = "VoiceControlTest/VoiceControlTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AD4C60DF1982848A002CA00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Framework",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoiceControlTest/VoiceControlTest-Prefix.pch";
+				INFOPLIST_FILE = "VoiceControlTest/VoiceControlTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		AD4C60E11982848A002CA00A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoiceControlTest.app/VoiceControlTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoiceControlTest/VoiceControlTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VoiceControlTestTests/VoiceControlTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		AD4C60E21982848A002CA00A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VoiceControlTest.app/VoiceControlTest";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VoiceControlTest/VoiceControlTest-Prefix.pch";
+				INFOPLIST_FILE = "VoiceControlTestTests/VoiceControlTestTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AD4C60A61982848A002CA00A /* Build configuration list for PBXProject "VoiceControlTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4C60DB1982848A002CA00A /* Debug */,
+				AD4C60DC1982848A002CA00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AD4C60DD1982848A002CA00A /* Build configuration list for PBXNativeTarget "VoiceControlTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4C60DE1982848A002CA00A /* Debug */,
+				AD4C60DF1982848A002CA00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD4C60E01982848A002CA00A /* Build configuration list for PBXNativeTarget "VoiceControlTestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD4C60E11982848A002CA00A /* Debug */,
+				AD4C60E21982848A002CA00A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AD4C60A31982848A002CA00A /* Project object */;
+}
